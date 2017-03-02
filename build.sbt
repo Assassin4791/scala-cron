@@ -8,10 +8,10 @@ organization := "com.github.buster84"
 
 version := "1.0.0"
 
-scalaVersion := "2.11.5"
+scalaVersion := "2.12.0"
 
 // Change this to another test framework if you prefer
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.1.6" % "test"
+//libraryDependencies += "org.scalatest" %% "scalatest" % "2.1.6" % "test"
 
 libraryDependencies <++= scalaVersion {sv =>
   if ( sv.startsWith( "2.11" ) ){
